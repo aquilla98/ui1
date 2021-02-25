@@ -67,5 +67,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.457" />
 
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/Fragment0"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/nav_graph">-->
+<!--    </androidx.fragment.app.FragmentContainerView>-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
