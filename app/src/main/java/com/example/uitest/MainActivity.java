@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     int n1 = 0;
     TextView number2;
     int n2 = 0;
-//    View view;
 
     //        FragmentManager supportFragmentManager = True;
 //        {
@@ -37,8 +36,10 @@ public class MainActivity extends AppCompatActivity {
 //        public void onClick(View view) {
 //            Navigation.findNavController(view).navigate(R.id.navigationAction);
 //        }
-//    });fafjfsaa
-public void navigate (int resId){}
+//    })
+
+
+//public void navigate (int resId){}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,14 +53,10 @@ public void navigate (int resId){}
         this.button.setText("I'm not clicked yet");
         this.button2 = findViewById(R.id.button2);
         this.button2.setText("I'm not clicked yet 2");
-        this.button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                button2.setText("I'm clicked 2");
-                n2 = n2 + 1;
-                number2.setText("I'm clicked " + n2 + " times");
-
-            }
+        this.button2.setOnClickListener(v -> {
+            button2.setText("I'm clicked 2");
+            n2 = n2 + 1;
+            number2.setText("I'm clicked " + n2 + " times");
         });
 
         this.button3 = findViewById(R.id.button3);
