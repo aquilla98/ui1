@@ -53,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
         this.button3 = findViewById(R.id.button3);
         this.button3.setText("Click me to navigate to the next page");
 
-//        this.button3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Navigation.findNavController(view).navigate(R.id.action1);
-//            }
-//        });
+        this.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action1);
+            }
+        });
 
     }
 
