@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         this.button3 = findViewById(R.id.button3);
         this.button3.setText("Click me to navigate to the next page");
-//        this.button3.setOnClickListener();
-
-
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
