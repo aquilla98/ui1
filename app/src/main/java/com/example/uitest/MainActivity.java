@@ -1,16 +1,12 @@
 package com.example.uitest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.NavHost;
-import androidx.navigation.NavHostController;
-import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
@@ -24,13 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout);
-
-        Navigation.findNavController(View);
-
-        NavHostFragment navHostFragment =
-                (NavHostFragment) supportFragmentManager.findFragmentById(R.id.nav_host_fragment);
-        NavController navController = navHostFragment.getNavController();
+        setContentView(R.layout.activity_main);
 
         this.number1 = findViewById(R.id.textView1);
         this.number1.setText("I'm text");
@@ -52,14 +42,15 @@ public class MainActivity extends AppCompatActivity {
 
         this.button3 = findViewById(R.id.button3);
         this.button3.setText("Click me to navigate to the next page");
+//        this.button3.setOnClickListener();
 
-        this.button3.setOnClickListener(new View.OnClickListener() {
+
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action1);
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
-
     }
 
     public void onButtonClicked(View view) {

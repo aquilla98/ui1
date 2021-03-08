@@ -1,18 +1,13 @@
 package com.example.uitest;
 
-import android.app.Fragment;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class newActivity2 extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
     Button button4;
     TextView number4;
     int n4 = 0;
@@ -21,7 +16,7 @@ public class newActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.constraintlayout);
+        setContentView(R.layout.activity_second);
         this.button4 = findViewById(R.id.button4);
         this.button4.setText("I'm not clicked yet");
         this.number4 = findViewById(R.id.textView4);
