@@ -9,7 +9,7 @@
         android:id="@+id/nav_host_fragment0"
         android:name="com.example.uitest.MainActivity"
         android:label="layout"
-        tools:layout="@layout/layout" >
+        tools:layout="@layout/activity_main" >
         <action
             android:id="@+id/action1"
             app:destination="@id/nav_host_fragment1" />
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/nav_host_fragment1"
-        android:name="com.example.uitest.newActivity2"
+        android:name="com.example.uitest.SecondActivity"
         android:label="constraintlayout"
-        tools:layout="@layout/constraintlayout" />
+        tools:layout="@layout/activity_second" />
 </navigation>
