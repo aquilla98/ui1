@@ -7,6 +7,18 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:text="@string/Button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/testButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/testButton"
         android:layout_width="0dp"
         android:layout_height="90dp"
@@ -17,18 +29,6 @@
         android:text="@string/testButton"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="48dp"
-        android:layout_weight="1"
-        android:text="@string/Button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/testButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
